@@ -1,0 +1,144 @@
+*{
+  font-family: "roboto", "sans-serif";
+}
+main{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  place-items: center;
+
+}
+
+.hero div h1 {
+  color: #333;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 24px;
+}
+
+.hero div p {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.hero div button {
+  border: none;
+  border-radius: 20px;
+  color: #333;
+  background-color: #fb8c00;
+  font-weight: bolder;
+  padding: 12px 24px;
+  
+}
+.hero div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.dishes-section{
+  margin: 100px 0;
+}
+
+
+.dishes-section h2 {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.dishes {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 180px));
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  justify-content: center;
+}
+
+.dishes-video {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.dishes img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.menu-section h2 {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.menu-dishes {
+  width: 100%;
+  height: 180px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-content: center;
+  gap: 5px;
+  margin: 24px auto;
+}
+
+.menu-dishes-item {
+  width: 100%;
+  height: 180px;
+  background-color: antiquewhite;
+  border-radius: 16px;
+
+}
+
+.menu-dishes-item img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 985px) {
+  .hero {
+    background-image: url(./images/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-template-columns: 1fr;
+  }
+
+  .hero div h1 {
+    color: black;
+  }
+
+  .hero div p {
+    color: black;
+  }
+
+  .hero .hero-text {
+    text-align: center;
+  }
+
+  .hero div img {
+    display: none;
+  }
+
+  .dishes{
+    grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
+    
+  }
+
+
+  
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="valor"></div>
+
+  <script>
+    data = [
+      { task: "learn HTMl and CSS", state: "Done" },
+      { task: "learn Responsive design: mobile first", state: "Done" },
+      { task: "learn CSS Grid Basic", state: "Done" },
+      { task: "learn javaScript", state: "Done" }
+    ]
+
+    const valor = document.getElementById("valor");
+
+    data.forEach(resultado => {
+      valor.innerHTML += `<li>${resultado.task} : 
+    <input id="input" type="checkbox";>
+    <span id="clicked" ></span> </li > `
+
+    }
+    );
+
+    const input = document.getElementById("input");
+    const clicked = document.getElementById("clicked");
+
+
+
+
+  </script>
+</body>
+
+</html>

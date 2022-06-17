@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Promedio o Mediana</h1>
+    </header>
+    <section>
+        <div>
+            <form action="">
+                <label for="valoresApromediar">Ingrese los valores a promediar
+                    <input type="number" name="valoresApromediar" id="valoresApromediar">
+                </label>
+                <button type="button" onclick="agregarValor()">Agregar</button>
+            </form>
+            <p>numero total de valores <span id="total"></span></p>
+            <p> valores agregados = [<span id="lista"></span>]</p>
+        </div>
+    </section>
+    <script src="./promedio.js"></script>
+</body>
+
+</html>

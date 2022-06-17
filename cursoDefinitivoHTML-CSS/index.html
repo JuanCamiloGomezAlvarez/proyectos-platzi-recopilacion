@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curso-html-css-platzi</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a href="#">Home</a></li>
+                <li class="menu-nav__item"><a href="#">Courses</a></li>
+                <li class="menu-nav__item"><a href="#">Blog</a></li>
+                <li class="menu-nav__item"><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main container">
+        <aside class="aside">
+            <div class="aside__div">este es un div</div>
+            <div class="aside__div">este es un div</div>
+            <div class="aside__div"> este es un div</div>
+        </aside>
+        <section class="main__section">
+            <form action="" class="form">
+                <label class="form__label" for="fname">First Name</label><br>
+                <input class="form__input" type="text" id="fname" name="nombre" placeholder="your first Name"
+                    autocomplete="name" required><br>
+                <label class="form__label" for="lname">Last name</label><br>
+                <input class="form__input" type="text" id="lname" name="apellido" placeholder="Your Last Name"><br>
+                <label class="form__label" for="date">
+                    Birthday <br>
+                    <input class="form__input" type="datetime-local" name="edad" id="date">
+                </label>
+                <label class="form__label" for="mail"><br>
+                    <span>Email</span><br>
+                    <input class="form__input" type="email" name="correo" id="mail" placeholder="Mail"
+                        autocomplete="email" required>
+                </label>
+                <label class="form__label" for="career"><br>
+                    Career <br>
+                    <input class="form__input" list="carreras"> <br>
+                    <datalist id="carreras">
+                        <option value="Data scients"></option>
+                        <option value="Maching Learning"></option>
+                        <option value="computer Scients"></option>
+                        <option value="Sotfware Engineer"></option>
+                    </datalist>
+                </label>
+
+                <input type="submit">
+
+            </form>
+
+            <figure class="figure">
+                <img src="./images/pexels-jacub-gomez-1142950.jpg" alt="space">
+                <figcaption>Es una imágen del espacio</figcaption>
+            </figure>
+        </section>
+
+
+    </main>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

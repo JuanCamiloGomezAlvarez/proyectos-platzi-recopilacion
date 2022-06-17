@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas</title>
+    <script src="./figuras.js">
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Figuras geométricas
+        </h1>
+        <p>Este es el primer taller del curso práctico de javaScript</p>
+    </header>
+    <section>
+        <div>
+            <h2>Cuadrados</h2>
+            <h3>Calcula el área Y el perímetro de un cuadrado</h3>
+            <form action="">
+                <label for="ladoCuadrado">Escribe cuánto mide cada lado de tu cuadrado: </label>
+                <input type="number" id="ladoCuadrado" name="ladoCuadrado">
+
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                <p>El resultado del perimetro es: </p>
+                <label id="resultadoCalculoPerimetro">...</label>
+
+                <button type="button" onclick="calcularAreaCuadrado()">calcular el área</button>
+                <p>El resultado del área es: </p>
+                <label id="resultadoCalculoArea">...</label>
+            </form>
+        </div>
+        <div>
+            <h2>Triangulos</h2>
+            <h3>triangulos isósceles</h3>
+            <form action="">
+                <label for="ladosTrianguloIsosceles1, ladosTrianguloIsosceles2, ladosTrianguloIsosceles3 ">Escribe los
+                    lados de tu triangulo isósceles: </label>
+                <input type="number" id="ladosTrianguloIsosceles1" name="ladosTrianguloIsosceles1">
+                <input type="number" id="ladosTrianguloIsosceles2" name="ladosTrianguloIsosceles2">
+                <input type="number" id="ladosTrianguloIsosceles3" name="ladosTrianguloIsosceles3">
+                <button type="button" onclick="calcularAlturaTrianguloIsosceles()">Calcular Altura</button>
+                <label id="resultadoCalculoAlturaTrianguloIsosceles">...</label>
+            </form>
+        </div>
+        <div>
+            <h2>Circulos</h2>
+        </div>
+    </section>
+
+</body>
+
+</html>
